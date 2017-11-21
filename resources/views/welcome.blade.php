@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Perpustakaan2
+                    Perpustakaan Laravel
                 </div>
 
                 <div class="links">
