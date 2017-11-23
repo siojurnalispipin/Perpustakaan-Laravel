@@ -54,7 +54,9 @@ create table lokasi(
 
 create table pengarang(
     id int not null primary key auto_increment,
-    nama_pengarang char(50) not null
+    nama_pengarang char(50) not null,
+    updated_at timestamp,
+    created_at timestamp
 );
 
 create table penerbit(
