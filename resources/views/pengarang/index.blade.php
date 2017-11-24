@@ -9,7 +9,7 @@
                 <th>Action</th>
                 
             </tr>
-            <a href="{{route('pengarang.create')}}" class="btn btn-sm btn-info pull-left">Tambah</a></br></br>
+            <a href="{{route('pengarang.create')}}"><i class="glyphicon glyphicon-plus"></i> Tambah</a></br></br>
 
             <?php $no=1; ?>
             @foreach($pengarangs as $pengarang)
@@ -21,8 +21,8 @@
                     <form action="{{route('pengarang.destroy',$pengarang->id)}} " method="post">
                         <input type="hidden" name="_method" value="delete">
                         <input type="hidden" name="_token" value="{{ csrf_token()}} ">
-                        <a href="{{route('pengarang.edit',$pengarang->id)}}" class="btn btn-sm btn-primary">Edit</a>
-                        <input type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin akan menghapus data ?')" name="name" value="delete">
+                        <a href="{{route('pengarang.edit',$pengarang->id)}}" class="btn btn-sm btn-success"> <i class="glyphicon glyphicon-edit"></i></a>
+                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin akan menghapus data ?')" name="name"><i class="glyphicon glyphicon-remove"></i></button>
                     </form> 
                 </td>
             </tr>

@@ -12,7 +12,7 @@ class PengarangController extends Controller
     {
         //Show data 
         $pengarangs = Pengarang::all();
-        return view('pengarang.index',['pengarangs' => $pengarangs]);
+        return view('pengarang.index',['pengarangs' => $pengarangs,'judul' => 'Pengarang']);
     }
 
     /**
@@ -23,7 +23,7 @@ class PengarangController extends Controller
     public function create()
     {
         //create 
-        return view('pengarang.create');
+        return view('pengarang.create',['judul' => 'Tambah Pengarang']);
     }
 
     /**
@@ -64,7 +64,7 @@ class PengarangController extends Controller
     {
         // return to the edit view
         $pengarang = Pengarang::findOrFail($id);
-        return view('pengarang.edit',compact('pengarang'));
+        return view('pengarang.edit',compact('pengarang'),['judul' => 'Edit Pengarang']);
     }
 
     /**

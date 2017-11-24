@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::group(['middleware' => ['web']], function(){
 	Route::resource('pengarang','PengarangController');
 });
+
+
+Route::get('login','LoginController@getLogin');

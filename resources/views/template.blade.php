@@ -38,7 +38,7 @@
                     <a href="admin" class="navbar-brand">
                         <small>
 
-                            Halaman Administrasi Sistem Perpustakaan
+                            Admin Panel Sistem
                         </small>
                     </a>
                 </div>
@@ -278,7 +278,7 @@
                 <div class="main-content-inner">
                     <div class="breadcrumbs ace-save-state" id="breadcrumbs">
                         <ul class="breadcrumb">
-                        App Perpus
+                        {{$judul}}
                         </ul><!-- /.breadcrumb -->
 
 
